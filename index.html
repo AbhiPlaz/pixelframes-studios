@@ -3,100 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PixelFrames Studio - Professional Video Editing Services</title>
+    <title>PixelFrames Studios - Premium Video Production</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <nav>
-        <div class="logo">PixelFrames Studio</div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="services.html">Services</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">PixelFrames Studios</a>
+            <button class="mobile-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
     </nav>
-    
-    <header id="home">
-        <div class="hero-content">
-            <h1>Transform Your Vision Into Stunning Visual Stories</h1>
-            <p>Professional video editing services for creators and businesses</p>
-            <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-            <a href="#portfolio" class="btn btn-secondary">View Our Work</a>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Transform Your Vision Into Cinematic Reality</h1>
+            <p>Professional video production services for brands, creators, and businesses</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+                <a href="portfolio.html" class="btn btn-outline">View Our Work</a>
+            </div>
         </div>
     </header>
-    
-    <section id="about" class="section-light">
+
+    <!-- Services Section -->
+    <section id="services" class="section">
         <div class="container">
-            <h2>About PixelFrames Studio</h2>
-            <p>We're a passionate team of video editors dedicated to bringing your creative vision to life. With over 5 years of experience in the industry, we've worked with clients ranging from independent creators to major brands.</p>
-        </div>
-    </section>
-    
-    <section id="services" class="section-dark">
-        <div class="container">
-            <h2>Our Services</h2>
+            <h2>Our Production Services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Video Editing</h3>
-                    <p>Professional cutting, sequencing, and pacing for your footage</p>
+                    <i class="fas fa-film service-icon"></i>
+                    <h3>Commercial Production</h3>
+                    <p>High-impact ads for TV, social media, and digital platforms</p>
                 </div>
                 <div class="service-card">
-                    <h3>Color Grading</h3>
-                    <p>Enhance the mood and visual appeal of your videos</p>
+                    <i class="fas fa-music service-icon"></i>
+                    <h3>Music Videos</h3>
+                    <p>Creative visuals that amplify your sound</p>
                 </div>
                 <div class="service-card">
-                    <h3>Motion Graphics</h3>
-                    <p>Dynamic animations and titles to elevate your content</p>
+                    <i class="fas fa-briefcase service-icon"></i>
+                    <h3>Corporate Videos</h3>
+                    <p>Professional content for businesses and brands</p>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section id="portfolio" class="section-light">
+
+    <!-- Portfolio Preview -->
+    <section class="section bg-light">
         <div class="container">
-            <h2>Our Portfolio</h2>
-            <div class="portfolio-grid">
+            <h2>Featured Projects</h2>
+            <div class="portfolio-preview">
                 <div class="portfolio-item">
-                    <div class="portfolio-thumbnail"></div>
-                    <h3>Commercial Project</h3>
+                    <img src="images/commercial-thumbnail.jpg" alt="Commercial Project">
+                    <div class="overlay">
+                        <h3>Nike Commercial</h3>
+                        <a href="portfolio.html#commercial" class="btn btn-small">View More</a>
+                    </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="portfolio-thumbnail"></div>
-                    <h3>Music Video</h3>
+                    <img src="images/music-thumbnail.jpg" alt="Music Video">
+                    <div class="overlay">
+                        <h3>Artist - "Summer Vibes"</h3>
+                        <a href="portfolio.html#music" class="btn btn-small">View More</a>
+                    </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-thumbnail"></div>
-                    <h3>Corporate Video</h3>
-                </div>
+            </div>
+            <div class="text-center mt-2">
+                <a href="portfolio.html" class="btn btn-primary">See Full Portfolio</a>
             </div>
         </div>
     </section>
-    
-    <section id="contact" class="section-dark">
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Tell us about your project"></textarea>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">PixelFrames Studio</div>
-                <div class="social-links">
-                    <a href="#">Instagram</a>
-                    <a href="#">YouTube</a>
-                    <a href="#">LinkedIn</a>
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>PixelFrames Studios</h3>
+                    <p>Creating visual stories that captivate and inspire since 2018.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
-            <p class="copyright">&copy; 2023 PixelFrames Studio. All rights reserved.</p>
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> PixelFrames Studios. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
