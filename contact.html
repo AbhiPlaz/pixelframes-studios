@@ -3,55 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | PixelFrames Studio</title>
+    <title>Contact Us | PixelFrames Studios</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">PixelFrames Studio</div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="services.html">Services</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html" class="active">Contact</a>
-        </div>
+    <nav class="navbar">
+        <!-- Same navigation as index.html -->
     </nav>
-    
+
     <header class="page-header">
         <div class="container">
-            <h1>Let's Create Something Amazing</h1>
-            <p>Get in touch to discuss your video project</p>
+            <h1>Let's Create Together</h1>
+            <p>Get in touch to discuss your next project</p>
         </div>
     </header>
-    
-    <section class="section-light">
+
+    <section class="section">
         <div class="container">
-            <div class="contact-container">
+            <div class="contact-grid">
                 <div class="contact-info">
-                    <h2>Contact Information</h2>
+                    <h2>Our Studio</h2>
                     <div class="info-item">
-                        <h3>Email</h3>
-                        <p>contact@pixelframesstudio.com</p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Creative Lane, Los Angeles, CA 90028</p>
                     </div>
                     <div class="info-item">
-                        <h3>Phone</h3>
+                        <i class="fas fa-phone"></i>
                         <p>+1 (555) 123-4567</p>
                     </div>
                     <div class="info-item">
-                        <h3>Studio Address</h3>
-                        <p>123 Creative Lane<br>Los Angeles, CA 90028</p>
+                        <i class="fas fa-envelope"></i>
+                        <p>contact@pixelframesstudios.com</p>
                     </div>
                     <div class="info-item">
-                        <h3>Business Hours</h3>
-                        <p>Monday-Friday: 9am-6pm PST<br>Saturday: 10am-4pm PST</p>
+                        <i class="fas fa-clock"></i>
+                        <p>Monday-Friday: 9am-6pm PST</p>
                     </div>
                 </div>
-                
+
                 <div class="contact-form-container">
                     <h2>Send Us a Message</h2>
-                    <form class="contact-form">
+                    <form id="contactForm" action="https://formspree.io/f/xblkkgdw" method="POST">
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" name="name" required>
@@ -62,12 +56,11 @@
                         </div>
                         <div class="form-group">
                             <label for="service">Service Needed</label>
-                            <select id="service" name="service">
+                            <select id="service" name="service" required>
                                 <option value="">Select a service</option>
-                                <option value="editing">Video Editing</option>
-                                <option value="grading">Color Grading</option>
-                                <option value="motion">Motion Graphics</option>
-                                <option value="full">Full Production</option>
+                                <option value="commercial">Commercial Production</option>
+                                <option value="music">Music Video</option>
+                                <option value="corporate">Corporate Video</option>
                                 <option value="other">Other</option>
                             </select>
                         </div>
@@ -75,49 +68,22 @@
                             <label for="message">Project Details</label>
                             <textarea id="message" name="message" rows="5" required></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="files">Upload Sample Files (Optional)</label>
-                            <input type="file" id="files" name="files" multiple>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <input type="hidden" name="_subject" value="New Project Inquiry - PixelFrames Studios">
+                        <input type="hidden" name="_next" value="https://abhiplaz.github.io/pixelframes-studios/thank-you.html">
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Send Message</span>
+                            <span class="spinner hidden"></span>
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    
-    <section class="section-dark">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <h3>What's your typical turnaround time?</h3>
-                    <p>Standard projects take 3-5 business days. Rush services (24-48 hour turnaround) are available for an additional fee.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What file formats do you accept?</h3>
-                    <p>We accept all major video formats including MP4, MOV, AVI, and ProRes. For large files, we recommend using WeTransfer or Google Drive.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Do you offer revisions?</h3>
-                    <p>Yes! We include 2 rounds of revisions in all our packages. Additional revisions are available at an hourly rate.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">PixelFrames Studio</div>
-                <div class="social-links">
-                    <a href="#">Instagram</a>
-                    <a href="#">YouTube</a>
-                    <a href="#">LinkedIn</a>
-                </div>
-            </div>
-            <p class="copyright">&copy; 2023 PixelFrames Studio. All rights reserved.</p>
-        </div>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
