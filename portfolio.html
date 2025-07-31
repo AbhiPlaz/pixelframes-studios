@@ -3,125 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Work | PixelFrames Studio</title>
+    <title>Our Portfolio | PixelFrames Studios</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <div class="logo">PixelFrames Studio</div>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="index.html#about">About</a>
-            <a href="services.html">Services</a>
-            <a href="portfolio.html" class="active">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </div>
+    <nav class="navbar">
+        <!-- Same navigation as index.html -->
     </nav>
-    
+
     <header class="page-header">
         <div class="container">
-            <h1>Our Video Portfolio</h1>
-            <p>See examples of our professional video work</p>
+            <h1>Our Creative Portfolio</h1>
+            <p>Explore our diverse range of video production projects</p>
         </div>
     </header>
-    
-    <section class="section-light">
+
+    <section class="section">
         <div class="container">
             <div class="portfolio-filter">
                 <button class="filter-btn active" data-filter="all">All Projects</button>
                 <button class="filter-btn" data-filter="commercial">Commercial</button>
                 <button class="filter-btn" data-filter="music">Music Videos</button>
                 <button class="filter-btn" data-filter="corporate">Corporate</button>
-                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="documentary">Documentary</button>
             </div>
-            
+
             <div class="portfolio-grid">
+                <!-- Commercial Projects -->
                 <div class="portfolio-item" data-category="commercial">
-                    <div class="portfolio-thumbnail" style="background-image: url('images/portfolio/commercial1.jpg');">
-                        <div class="play-icon">▶</div>
+                    <div class="portfolio-thumbnail">
+                        <img src="images/commercial-1.jpg" alt="Sports Drink Commercial">
+                        <div class="portfolio-overlay">
+                            <h3>Energize Sports Drink</h3>
+                            <p>30-second TV commercial</p>
+                            <a href="#" class="btn btn-small">View Case Study</a>
+                        </div>
                     </div>
-                    <h3>Nike Commercial</h3>
-                    <p>Full editing and color grading</p>
                 </div>
-                
+
+                <!-- Music Video Projects -->
                 <div class="portfolio-item" data-category="music">
-                    <div class="portfolio-thumbnail" style="background-image: url('images/portfolio/music1.jpg');">
-                        <div class="play-icon">▶</div>
+                    <div class="portfolio-thumbnail">
+                        <img src="images/music-1.jpg" alt="Artist Music Video">
+                        <div class="portfolio-overlay">
+                            <h3>Jade - "Midnight"</h3>
+                            <p>Official music video</p>
+                            <a href="#" class="btn btn-small">Watch Video</a>
+                        </div>
                     </div>
-                    <h3>Artist - Song Title</h3>
-                    <p>Editing and visual effects</p>
                 </div>
-                
+
+                <!-- Corporate Projects -->
                 <div class="portfolio-item" data-category="corporate">
-                    <div class="portfolio-thumbnail" style="background-image: url('images/portfolio/corporate1.jpg');">
-                        <div class="play-icon">▶</div>
+                    <div class="portfolio-thumbnail">
+                        <img src="images/corporate-1.jpg" alt="Company Profile">
+                        <div class="portfolio-overlay">
+                            <h3>TechSolutions Inc.</h3>
+                            <p>Corporate profile video</p>
+                            <a href="#" class="btn btn-small">View Project</a>
+                        </div>
                     </div>
-                    <h3>Tech Company Profile</h3>
-                    <p>Corporate video production</p>
                 </div>
-                
-                <div class="portfolio-item" data-category="wedding">
-                    <div class="portfolio-thumbnail" style="background-image: url('images/portfolio/wedding1.jpg');">
-                        <div class="play-icon">▶</div>
-                    </div>
-                    <h3>Sarah & John's Wedding</h3>
-                    <p>Full wedding video edit</p>
-                </div>
-                
-                <div class="portfolio-item" data-category="commercial">
-                    <div class="portfolio-thumbnail" style="background-image: url('images/portfolio/commercial2.jpg');">
-                        <div class="play-icon">▶</div>
-                    </div>
-                    <h3>Coca-Cola Ad</h3>
-                    <p>Editing and motion graphics</p>
-                </div>
-                
-                <div class="portfolio-item" data-category="music">
-                    <div class="portfolio-thumbnail" style="background-image: url('images/portfolio/music2.jpg');">
-                        <div class="play-icon">▶</div>
-                    </div>
-                    <h3>Band - Album Promo</h3>
-                    <p>Full video production</p>
-                </div>
+
+                <!-- Additional portfolio items would follow the same pattern -->
             </div>
         </div>
     </section>
-    
-    <section class="testimonials section-dark">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial">
-                    <p>"PixelFrames transformed our raw footage into a masterpiece. Their attention to detail is incredible!"</p>
-                    <div class="client-info">
-                        <h4>Alex Johnson</h4>
-                        <p>Marketing Director, TechCorp</p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <p>"The color grading on our music video was exactly what we envisioned. Will definitely work with them again."</p>
-                    <div class="client-info">
-                        <h4>Maria Garcia</h4>
-                        <p>Artist Manager</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">PixelFrames Studio</div>
-                <div class="social-links">
-                    <a href="#">Instagram</a>
-                    <a href="#">YouTube</a>
-                    <a href="#">LinkedIn</a>
-                </div>
-            </div>
-            <p class="copyright">&copy; 2023 PixelFrames Studio. All rights reserved.</p>
-        </div>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
